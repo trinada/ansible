@@ -1,0 +1,7 @@
+---
+- hosts: slave
+  tasks:
+    - name: creating a file
+      file:
+        path: "{{ path }}/{{ file_name }}"
+        state: touch
